@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Clone Repo') {
             steps {
-                git 'https://github.com/your-repo.git'
+                git 'https://github.com/Prathamesh318/user-management.git'
             }
         }
         stage('Build') {
@@ -14,8 +14,8 @@ pipeline {
         stage('Docker Build and Push') {
             steps {
                 sh '''
-                docker build -t your-dockerhub-username/user-management:1.0 .
-                docker push your-dockerhub-username/user-management:1.0
+                docker build -t prathamesh318/user-management:latest .
+                docker push prathamesh318/user-management:latest
                 '''
             }
         }
@@ -29,3 +29,4 @@ pipeline {
         }
     }
 }
+
