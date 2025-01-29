@@ -7,7 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class UserManagementApplication {
 
 	public static void main(String[] args) {
-		System.out.println("Application Running Successfully");
+		System.out.println("Application Running Successfully 444444");
 		SpringApplication.run(UserManagementApplication.class, args);
 	}
 
